@@ -3,7 +3,6 @@
 Parse article from HTML into structured text with Newspaper3k.
 https://github.com/codelucas/newspaper
 """
-import sys
 
 __version__ = "1.0.0"
 __author__ = "Alexander Kamyanskiy"
@@ -13,11 +12,12 @@ import ntpath
 import nltk
 import newspaper
 import os
+import sys
 
-from bs4.element import Tag
-from urllib.parse import urlparse
 from bs4 import BeautifulSoup
+from bs4.element import Tag
 from formatters import ParseHelper
+from urllib.parse import urlparse
 
 
 WORDS_TO_SKIP = ["Реклама"]
