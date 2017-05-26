@@ -5,8 +5,13 @@ Library newspaper3k was used https://github.com/codelucas/newspaper
 #### On Windows (in cmd)
 ```
 E:\> cd html2article
+
 E:\html2article> virtualenv.exe .
+
 E:\html2article> Scripts\activate.bat
+
+(grab_article) E:\html2article> pip install packages/PyYAML-3.12-cp36-cp36m-win32.whl  (or PyYAML-3.12-cp36-cp36m-win_amd64.whl)
+
 (grab_article) E:\html2article> pip install -r requirements.txt
 
 (grab_article) E:\html2article> html2article.py -h
